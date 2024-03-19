@@ -1,19 +1,16 @@
 <h2>Associations</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Logo</th>
-      <th>Nom</th>
-    </tr>
-  </thead>
-  <tbody>
+  <ul>
     <% @associations.each do |association| %>
-      <p> <%= association.name %> </p>
-      <tr>
-        <td><%= image_tag(association.logo_address, width: '100') if association.logo_address.present? %></td>
-        <td><%= link_to association.name, association.website %></td>
-      </tr>
+      <li>
+        <td>
+          <% if association.logo_address.present? %>
+            <%= image_tag(association.logo_address, width: '100') %>
+          <% end %>
+        </td>
+        <td><%= link_to association.name, association %></td>
+      </li>
     <% end %>
-  </tbody>
+  </ul>
+  <%= link_to "New Association", new_association_path %>
 </table>

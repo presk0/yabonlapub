@@ -1,0 +1,10 @@
+<h1><%= @association.name %></h1>
+<%= image_tag(@association.logo_address, width: '100') if @association.logo_address.present? %>
+<p><%= link_to "website", @association.website %></p>
+<ul>
+  <li><%= link_to "Edit", edit_association_path(@association) %></li>
+  <li><%= link_to "Destroy", association_path(@association), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

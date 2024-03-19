@@ -23,5 +23,9 @@ module Yabon
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    #evite les bugs lorsque le logo n'est pas trouve
+    # https://guides.rubyonrails.org/asset_pipeline.html
+    config.assets.unknown_asset_fallback = true
   end
 end

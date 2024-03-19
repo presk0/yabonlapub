@@ -7,5 +7,12 @@ Rails.application.routes.draw do
 
   resources :associations, :funders
   # Defines the root path route ("/")
+
+  get "/associations", to: "associations#index"
+  get "/associations/:id", to: "associations#show"
+
+  get "/funders", to: "funders#index"
+  get "/funders/:id", to: "funders#show"
+
   root "pages#home"
 end
