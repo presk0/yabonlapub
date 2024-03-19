@@ -1,0 +1,18 @@
+<h2>Funders</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Logo</th>
+      <th>Nom</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @funders.each do |funder| %>
+      <tr>
+        <td><%= image_tag(funder.logo_address, width: '100') if funder.logo_address.present? %></td>
+        <td><%= link_to funder.name, funder.website %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
