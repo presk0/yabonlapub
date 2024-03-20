@@ -11,8 +11,9 @@
     <% @funders.each do |funder| %>
       <tr>
         <td><%= image_tag(funder.logo_address, width: '100') if funder.logo_address.present? %></td>
-        <td><%= link_to funder.name, funder.website %></td>
+        <td><%= link_to funder.name, funder %></td>
       </tr>
     <% end %>
+  <%= link_to "New Funder", new_funder_path %>
   </tbody>
 </table>
