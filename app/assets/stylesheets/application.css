@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+ /* Styles CSS pour la barre de navigation */
+.main-nav {
+    background-color: #333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 0; /* Espacement intérieur */
+}
+.main-nav ul {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrer les éléments */
+}
+.main-nav li {
+    display: inline; /* Afficher les éléments de la liste horizontalement */
+    margin: 0 10px; /* Espacement entre les éléments */
+}
+.main-nav a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+}
+.main-nav a:hover {
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}

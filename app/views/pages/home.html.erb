@@ -7,20 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Yabonlapub</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><%= link_to 'Accueil', root_path %></li>
-            <li><%= link_to 'Associations', associations_path %></li>
-            <li><%= link_to 'Funders', funders_path %></li>
-    </nav>
     <main>
         <%= yield %>
     </main>
-    <footer>
-        <p>&copy; 2024 Site de Jeux. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>

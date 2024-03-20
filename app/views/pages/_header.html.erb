@@ -1,1 +1,10 @@
-header goes to /home/presk0/yabon/app/views/pages/_header.html.erb<br>
+<header>
+    <nav class="main-nav">
+        <ul>
+            <%= link_to image_tag("logo.png", size: "15x15"), root_path %> <!-- classe definie dans assets en css -->
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Associations', associations_path %></li>
+            <li><%= link_to 'Funders', funders_path %></li>
+        </ul>
+    </nav>
+</header>

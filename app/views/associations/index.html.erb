@@ -1,17 +1,13 @@
 <h2>Associations</h2>
 
-<table>
-  <ul>
-    <% @associations.each do |association| %>
-      <li>
-        <td>
-          <% if association.logo_address.present? %>
-            <%= image_tag(association.logo_address, width: '100') %>
-          <% end %>
-        </td>
-        <td><%= link_to association.name, association %></td>
-      </li>
-    <% end %>
-  </ul>
-  <%= link_to "New Association", new_association_path %>
-</table>
+<%= link_to "New Association", new_association_path %>
+<ul>
+  <% @associations.each do |association| %>
+    <li>
+        <% if association.logo_address.present? %>
+          <%= image_tag(association.logo_address, width: '100') %>
+        <% end %>
+        <%= link_to association.name, association %>
+    </li>
+  <% end %>
+</ul>
