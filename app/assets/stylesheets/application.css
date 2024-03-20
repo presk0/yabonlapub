@@ -58,3 +58,21 @@
 ul {
     list-style-type: none; /* Supprime les puces */
 }
+
+.notice {
+    background-color: #dff0d8; /* Couleur de fond vert pâle */
+    color: #3c763d; /* Couleur du texte verte */
+    border: 1px solid #d0e9c6; /* Bordure verte */
+    padding: 15px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Espacement en bas */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+.alert {
+    background-color: #f2dede; /* Couleur de fond rouge pâle */
+    color: #a94442; /* Couleur du texte rouge */
+    border: 1px solid #ebccd1; /* Bordure rouge */
+    padding: 15px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Espacement en bas */
+    border-radius: 4px; /* Coins arrondis */
+}
