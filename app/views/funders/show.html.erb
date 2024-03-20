@@ -1,9 +1,9 @@
 <h1><%= @funder.name %></h1>
 <%= image_tag(@funder.logo_address, width: '100') if @funder.logo_address.present? %>
-<p><%= link_to "website", @funder.website %></p>
+<p><%= link_to "website", @funder.website, class:"bouton" %></p>
 <ul>
-  <li><%= link_to "Edit", edit_funder_path(@funder) %></li>
-  <li><%= link_to "Destroy", funder_path(@funder), data: {
+  <li><%= link_to "Edit", edit_funder_path(@funder), class:"bouton" %></li>
+  <li><%= link_to "Destroy", funder_path(@funder), class:"bouton", data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
                   } %></li>

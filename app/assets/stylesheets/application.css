@@ -36,3 +36,25 @@
 .main-nav a:hover {
     text-decoration: underline; /* Ajouter un soulignement au survol */
 }
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Jaune */
+    color: #fff; /* Texte blanc */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur de fond */
+}
+
+.bouton:hover {
+    background-color: #FFC107; /* Jaune plus clair au survol */
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces */
+}
