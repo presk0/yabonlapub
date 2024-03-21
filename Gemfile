@@ -53,6 +53,11 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
 end
 
+group :production do
+  #postgre sql
+  gem 'pg', '~> 0.18.4'
+end
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
@@ -62,6 +67,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # Use sqlite3 as the database for Active Record
+  gem "sqlite3", "~> 1.4"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
